@@ -131,7 +131,7 @@
     transition: all 1s;
 }
 .ex-7-img:hover {
-    filter: saturate(5%) sepia(1)
+    filter:sepia(.6) grayscale(.5);
 }
 
 /* ESERCIZIO 8 */
