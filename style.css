@@ -194,3 +194,42 @@
         transform:rotate(0deg);
     }
 }
+
+/* ESERCIZIO 12 */
+.ex-12-button {
+    position: relative;
+}
+
+.ex-12-button:hover .ex-12-top-white  {
+    animation-name: animation-top;
+    animation-duration: 3s;
+}
+@keyframes animation-top {
+    from {
+        position: absolute;
+        top: -10px;
+        left: 10%;
+    }
+    to {
+        position: absolute;
+        top: -10px;
+        left: calc(90% - 60px);
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: animation-bottom;
+    animation-duration: 3s;
+}
+@keyframes animation-bottom {
+    from {
+        position: absolute;
+        bottom: -10px;
+        right: 20%;
+    }
+    to {
+        position: absolute;
+        bottom: -10px;
+        right: calc(90% - 60px);
+    }
+}
